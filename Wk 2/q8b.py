@@ -6,8 +6,8 @@ def calculate_tax_2(income):
     """
     
     # Modify the code below to return the right amount of tax.
-    
-    return 0
+    tax = 0.02 * max(0, income - 20000)
+    return tax
 
    
 

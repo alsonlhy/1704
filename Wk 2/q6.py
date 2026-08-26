@@ -5,4 +5,4 @@ gender = input("What is your gender (M/F): ")
 
 price = week2_utility.get_insurance_premium(age, gender)
 
-print(\n price)
+print(price)
