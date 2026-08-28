@@ -31,3 +31,6 @@ print(x)
 
 x = perform_magic_4(x)
 print(x)
+
+# ln 21 prints 0 
+# ln 24 prints 1

@@ -15,8 +15,10 @@ def q7_1(str1, str2, str3):
     then this function should return "AB".
     """
     # Modify the code below to return a correct string.
-    
-    return ""
+    result1 = lab_2_util.get_common_characters(str1, str2)
+    result2 = lab_2_util.get_common_characters(result1, str3)
+
+    return result2
     
     
 def q7_2(str1, str2, str3):
@@ -31,8 +33,10 @@ def q7_2(str1, str2, str3):
     then this function should return "ABCD".
     """
     # Modify the code below to return a correct string.
-    
-    return ""
+    merged_str = str2 + str3
+
+    result = lab_2_util.get_common_characters(str1, merged_str)
+    return result
 
 # The code below is for testing the functions. Do not modify the code below.
 
@@ -42,4 +46,3 @@ s3 = "python"
 
 print(q7_1(s1, s2, s3))
 print(q7_2(s1, s2, s3))
-

@@ -22,17 +22,18 @@ def display_numbers(m, n):
 # Run the code to see what happens:
 # ##################################################################
 
-help(display_numbers)
+# help(display_numbers)
 
 # ##################################################################
 # The code below is given. Try to see what happens 
 # when you uncomment the function call below with the values 3 and 5.
 # ##################################################################
 
-#display_numbers(3, 5)
+# display_numbers(3, 5)
 
 ####################################################################
 # Write your codes below to print the expected output.
 
-
+display_numbers(0,10)
+display_numbers(5,9)
 

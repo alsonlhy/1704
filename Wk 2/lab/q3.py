@@ -22,5 +22,17 @@ def print_pattern(my_str, delimiter_str, n):
 ########################################################
 # Write your code below to print out the correct output.
 
+print_pattern("SMU", " * ", 10)
+print_pattern("* PYTHON *", "*",5)
+
+print()
+
+print_pattern("*", " ", 4)
+print_pattern(" *", "", 3)
+print_pattern("*", " ", 4)
+print_pattern(" *", "", 3)
+print_pattern("*", " ", 4)
+
+
 
 
