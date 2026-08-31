@@ -35,8 +35,7 @@ principal_amt = float(input("What is your principal amount? "))
 deposit_time = float(input("How long is your deposit period? "))
 
 interest_1 = calculate_interest(principal_amt, deposit_time)
-interest_2 = calculate_interest(principal_amt, deposit_time)
 
-print(interest_2)
+
 print(interest_1)
 

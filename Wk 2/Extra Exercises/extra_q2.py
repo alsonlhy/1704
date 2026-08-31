@@ -11,3 +11,9 @@ def print_square(symbol, size):
 
 
 print_square('*', 5)
+
+num = 5
+if num > 2:
+    print(num)
+    num = num - 1
+print(num)

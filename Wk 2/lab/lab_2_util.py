@@ -13,3 +13,7 @@ def get_common_characters(str1, str2):
         if (ch in str2) and (not (ch in result)):
             result = result + ch
     return result
+
+    
+
+print(type('True'))

@@ -33,4 +33,7 @@ x = perform_magic_4(x)
 print(x)
 
 # ln 21 prints 0 
-# ln 24 prints 1
+# ln 24 prints 0
+# ln 27 prints 0
+# ln 29 prints 3
+# ln 32 prints 15
