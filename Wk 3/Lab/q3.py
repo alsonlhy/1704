@@ -10,10 +10,10 @@ def calculate_salary(monthly_sales):
     if monthly_sales < 10000:
         commission = 0.05 * monthly_sales
 
-    elif 10000 <= monthly_sales <= 15000:
+    elif monthly_sales < 15000:
         commission = 0.1 * monthly_sales
 
-    elif 15000 <= monthly_sales <= 18000:
+    elif monthly_sales < 18000:
         commission = 0.15 * monthly_sales
 
     else:

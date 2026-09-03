@@ -16,6 +16,28 @@ def get_user_info():
 
 # Write your code below:
 
+info = get_user_info()
 
+if info[2] <= 6:
+    print(f"{info[0]}, you can travel for free.")
 
+elif info[2] < 60:
+    if info[1] == "M":
+        gender = "Mr. "
+    else:
+        gender = "Mrs. "
+
+    if info[3]:
+        print(f"{gender}{info[0]}, you can get a concessionary fare for students.")
+
+    else:
+        print(f"{gender}{info[0]}, you need to pay full fare.")
+
+else:
+    if info[1] == "M":
+        gender = "Mr. "
+    else:
+        gender = "Mrs. "
+
+    print(f"{gender}{info[0]}, you can get a concessionary fare for senior citizens.")
 
