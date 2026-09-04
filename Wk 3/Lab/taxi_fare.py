@@ -13,7 +13,7 @@ def meter_fare(fare_flag, fare_distance1, fare_distance2, ride_distance):
 
 def surcharge(time_surcharge, location):
 
-    total = time_surcharge * meter_fare(fare_flag, fare_distance1, fare_distance2, ride_distance) + location
+    total = time_surcharge * base_fare + location
 
     return total
 
@@ -49,7 +49,7 @@ if location == "yes":
 else:
     location = 0
 
-
-final_fare = meter_fare(fare_flag, fare_distance1, fare_distance2, ride_distance) + surcharge(time_surcharge, location)
+base_fare = meter_fare(fare_flag, fare_distance1, fare_distance2, ride_distance)
+final_fare = base_fare + surcharge(time_surcharge, location)
 
 print(f"The total fare is ${final_fare:.2f}")
