@@ -44,12 +44,10 @@ age = int(input("How old are you? "))
 
 paying_price = get_ticket_info(age)
 
-if paying_price[1] == True:
+if paying_price[1]:
     print("Congratulations! You qualify for a discount.")
-    print(f"You need to pay ${paying_price[0]}")
 
-else:
-    print(f"You need to pay ${paying_price[0]}")
+print(f"You need to pay ${paying_price[0]}")
 
 
 
