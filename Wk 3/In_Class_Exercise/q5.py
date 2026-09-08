@@ -12,9 +12,8 @@
 # True
 
 # False == (False or not True) or not (2 * 4 % 3 == 1)
-# False == (False) or not (True)
-# False == (False) or False
-# False == False
+# False == False or not (True)
+# True or not (True)
+# True or False
 # True
 
-print(False == (False or not True) or not (2 * 4 % 3 == 1))

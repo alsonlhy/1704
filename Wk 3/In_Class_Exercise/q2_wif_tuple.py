@@ -5,6 +5,7 @@ def get_day_of_week(num):
         return "Number should be at most 6"
     elif num < 0:
         return "Number should be at least 0"
+    
     return days[num]
 
 get_num = int(input("Enter a number indicating the day of a week [0 to 6]: "))

@@ -25,3 +25,4 @@ get_num = int(input("Enter a number indicating the day of a week [0 to 6]: "))
 date = get_day_of_week(get_num)
 
 print(date)
+

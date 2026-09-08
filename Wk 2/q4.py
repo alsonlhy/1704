@@ -1,6 +1,6 @@
 # ################################################################################
 # The following code is given to you.
-def calculate_total_amount(fifty_note, ten_note=0, five_note=0, two_note=0, one_coin=0):
+def calculate_total_amount(fifty_note, ten_note, five_note=0, two_note=0, one_coin=0):
     """
     This function takes in five parameters representing the numbers of banknotes and coin of
     different denominations received. The function returns the total amount of money.
@@ -16,6 +16,8 @@ def calculate_total_amount(fifty_note, ten_note=0, five_note=0, two_note=0, one_
     return fifty_note * 50 + ten_note * 10 + five_note * 5 + two_note * 2 + one_coin
 # ################################################################################
 
+# Positional variables for fifty_note and ten_note
+# five_note = 0 is a keyword argument
 
 # You can verify your answers to Q4 by printing out the values of the function calls below.
 
