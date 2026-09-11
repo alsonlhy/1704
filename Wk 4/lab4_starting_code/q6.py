@@ -19,23 +19,23 @@ def calculate_price_after_discount(unit_price, quantity, discount_rate):
 # Write your solution below for Part A:
 # num_of_items = int(input("How many items do you want to check out? "))
 
-# total_price = 0
+total_price = 0
 
-# for i in range(num_of_items):
-#     print(f"Enter the details of Item {i+1}")
-#     item = input("What's this item? ")
-#     price = float(input("What's the unit price of this item? "))
-#     qty = int(input("What's the quantity of this item? "))
-#     disc = input("Does this item have any discount? [yes/no] ")
+for i in range(num_of_items):
+    print(f"Enter the details of Item {i+1}")
+    item = input("What's this item? ")
+    price = float(input("What's the unit price of this item? "))
+    qty = int(input("What's the quantity of this item? "))
+    disc = input("Does this item have any discount? [yes/no] ")
 
-#     if disc == 'yes':
-#         percent_disc = float(input("What's the percentage of discount (%)? "))
-#         total_price += calculate_price_after_discount(price, qty, percent_disc)
+    if disc == 'yes':
+        percent_disc = float(input("What's the percentage of discount (%)? "))
+        total_price += calculate_price_after_discount(price, qty, percent_disc)
 
-#     else:
-#         total_price += price * qty
+    else:
+        total_price += price * qty
 
-# print(f"The total amount you have to pay is ${total_price:.2f}")
+print(f"The total amount you have to pay is ${total_price:.2f}")
 
 
 
