@@ -12,9 +12,15 @@ def count_a(text):
     """
     # Modify the code below to return the number of "a" occurrences.
 
+    count = 0
 
+    word = text.split()
 
-    return 0
+    for ch in word:
+        if ch == "a":
+            count += 1
+
+    return count
 # ################################################################################
 # Q7b 
 def count_an(text):
@@ -26,7 +32,13 @@ def count_an(text):
     word “an” occurs, its previous character and its next character are both a space.
     """
     # Modify the code below to return the number of "an" occurrences.
+    count = 0
+
+    word = text.split()
+
+    for ch in word:
+        if ch == "an":
+            count += 1
 
 
-
-    return 0
+    return count

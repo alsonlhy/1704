@@ -14,7 +14,11 @@ print('*****************')
 # ################################################################################
 # Write your code here:
 
+if num1 == num2 and num2 == num3:
+    print("Jackpot!")
 
+elif num1 == num2 or num2 == num3 or num1 == num3:
+    print("Two of a kind!")
 
-
-
+else:
+    print("Try again!")
