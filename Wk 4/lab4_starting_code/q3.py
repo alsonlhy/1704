@@ -13,7 +13,6 @@ calls = int(input("What's the minimum outgoing calls (in mins) you need? "))
 sms = int(input("What's the minimum number of SMS/MMS you need? "))
 data = float(input("What's the minimum amount of data (in GB) you need? "))
 
-found_plan = None
 
 for num, max_call, max_sms, max_data in combos:
 
@@ -22,5 +21,5 @@ for num, max_call, max_sms, max_data in combos:
         print(f"We recommend plan {num}")
         break
 
-    else:
-        print(f"Sorry! We don't have any plan that satisfies your requirements")
+else:
+    print(f"Sorry! We don't have any plan that satisfies your requirements")

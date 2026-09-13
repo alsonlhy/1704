@@ -23,6 +23,3 @@ def display_fibonacci(n):
 
 
 
-
-(display_fibonacci(10))
-
