@@ -1,10 +1,10 @@
-msg = input("Enter a message: ")
+# msg = input("Enter a message: ")
 
-for i in range(0, len(msg)-1):
-    ch = msg[i]
-    print(ch + "-", end="")
+# for i in range(0, len(msg)-1):
+#     ch = msg[i]
+#     print(ch + "-", end="")
 
-print(msg[-1])
+# print(msg[-1])
 
 # OR
 
