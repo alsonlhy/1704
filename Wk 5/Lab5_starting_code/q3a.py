@@ -3,6 +3,20 @@
 # Write your code below:
 ##############################################################
 
+def calculate_total_price(item_list):
+
+    total = 0
+
+    for i in range(len(item_list)):
+        tup = item_list[i]
+
+        cost = tup[1] * tup[2]
+
+        total += cost
+
+    return total
+
+
 
 
 

@@ -3,7 +3,17 @@
 # Write your code below:
 ##############################################################
 
+def all_older_than(age_list, n):
 
+
+    for num in age_list:
+        if num > n:
+            age = True
+
+        else:
+            age = False
+
+    return age
 
 
 

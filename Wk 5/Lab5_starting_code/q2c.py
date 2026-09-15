@@ -3,6 +3,16 @@
 # Write your code below:
 ##############################################################
 
+def get_sum_multiples(int_list, n):
+
+    total = 0
+
+    for num in int_list:
+
+        if num % n == 0:
+            total += num
+
+    return total
 
 
 

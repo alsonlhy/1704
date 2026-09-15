@@ -3,7 +3,18 @@
 # Write your code below:
 ##############################################################
 
+def get_items(item_list):
 
+    names = []
+
+    for i in range(len(item_list)):
+
+        tup = item_list[i]
+        name = tup[0]
+        
+        names.append(name)
+
+    return names
 
 
 

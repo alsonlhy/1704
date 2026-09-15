@@ -2,8 +2,42 @@
 ## d)
 # Write your code below:
 ##############################################################
+import math
 
 
+def check_prime(n):
+
+    if n <= 1:
+        return False
+
+    if n in (2,3):
+        return True
+
+    if n % 2 == 0:
+        return False
+
+    for i in range(3, math.isqrt(n)+ 1, 2):
+        if n % i == 0:
+            return False
+
+    return True
+
+def get_prime_numbers(num_list, sep):
+
+    string = ""
+    check = False
+
+
+    for num in num_list[:len(num_list)-1]:
+        if check == False and check_prime(num) == True:
+            string += str(num)
+            check = True
+
+        elif check == True and check_prime(num) == True:
+            string += sep + str(num)
+
+
+    return string
 
 
 

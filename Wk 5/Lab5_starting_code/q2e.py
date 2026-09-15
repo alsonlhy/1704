@@ -3,7 +3,25 @@
 # Write your code below:
 ##############################################################
 
+def calculate_sums(num_list):
 
+    list_add = ""
+    num = []
+
+    for i in range(len(num_list)):
+
+        numeral = num_list[i]
+
+        if numeral == num_list[0]:
+            num.append(numeral)
+
+        else:
+            for i in range(1, len(num_list)):
+                total = num_list[i] + num_list[i-1]
+                num.append(total)
+
+    return num
+            
 
 
 

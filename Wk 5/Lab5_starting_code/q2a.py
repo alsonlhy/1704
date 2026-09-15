@@ -3,7 +3,18 @@
 # Write your code below:
 ##############################################################
 
+def get_leap_years(leap):
 
+    years = []
+
+    for num in leap:
+        if num % 4 == 0 and not(num % 100 == 0) or num % 400 == 0:
+            years.append(num)
+
+    return years
+            
+
+    
 
 
 

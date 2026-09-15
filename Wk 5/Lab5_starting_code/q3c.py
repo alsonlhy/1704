@@ -3,7 +3,18 @@
 # Write your code below:
 ##############################################################
 
+def get_items_more_expensive_than(item_list, min_price):
 
+    new_list = []
+
+    for i in range(len(item_list)):
+
+        tup = item_list[i]
+
+        if tup[1] > min_price:
+            new_list.append(tup)
+
+    return new_list
 
 
 
