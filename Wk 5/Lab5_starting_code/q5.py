@@ -13,9 +13,21 @@ TAX_INFO = [
     (320000, 44550, 0.22)
 ]
 
+
 # Write your code below:
 ##############################################################
 
+def calculate_tax(income):
+
+    tax = 0
+
+    for limit, base_tax, rate in TAX_INFO:
+
+        if income > limit:
+            tax = base_tax + rate * (income - limit)
+
+
+    return tax
 
 
 

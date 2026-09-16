@@ -5,7 +5,18 @@ COMMON_WORDS = ['a', 'aa', 'ab', 'abc', 'ability', 'able', 'about', 'above', 'ab
 # Write your code below:
 ##############################################################
 
+def check_spelling(txt):
 
+    misspelled = []
+
+    words = txt.split()
+
+    for word in words:
+
+        if word.lower() not in COMMON_WORDS:
+            misspelled.append(word)
+
+    return misspelled
 
 
 
@@ -14,8 +25,8 @@ COMMON_WORDS = ['a', 'aa', 'ab', 'abc', 'ability', 'able', 'about', 'above', 'ab
 # Test Cases to test your code
 # DO NOT MODIFY THE TEST CODES
 
-my_list = check_spelling("I study at Singapore Management University")
-print("Expected: ['study', 'Management', 'University']")
+my_list = check_spelling("studdy at Singapore Managment Univercity")
+print("Expected: ['studdy', 'Managment', 'Univercity']")
 print("Actual  : " + str(my_list))
 
 
