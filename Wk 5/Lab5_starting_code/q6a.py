@@ -3,7 +3,17 @@
 # Write your code below:
 ##############################################################
 
+def get_all_combinations(str_list, num_list):
 
+    combination = []
+
+    for ch in str_list:
+        for i in range(len(num_list)):
+            tup = (ch, num_list[i])
+            combination.append(tup)
+
+
+    return combination
 
 
 

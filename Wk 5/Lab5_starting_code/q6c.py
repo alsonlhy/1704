@@ -3,6 +3,24 @@
 # Write your code below:
 ##############################################################
 
+def get_non_common_strings(str_list1, str_list2):
+
+    uncommon = []
+
+    for ch1 in str_list1:
+
+        if ch1 not in str_list2:
+            uncommon.append(ch1)
+
+    # for ch2 in str_list2:
+    #     if ch2 not in str_list1:
+    #         uncommon.append(ch2)
+
+    return uncommon
+
+                
+
+            
 
 
 

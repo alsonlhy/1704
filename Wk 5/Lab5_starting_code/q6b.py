@@ -3,7 +3,23 @@
 # Write your code below:
 ##############################################################
 
+def get_larger_numbers(num_list1, num_list2):
 
+    larger = []
+    check_num = False
+
+    for num1 in num_list1:
+
+        for num2 in num_list2:
+            if num1 > num2:
+                check_num = True
+            else:
+                check_num = False
+
+        if check_num == True:
+            larger.append(num1)
+
+    return larger
 
 
 
