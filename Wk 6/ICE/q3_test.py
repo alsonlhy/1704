@@ -1,0 +1,17 @@
+from q3 import retrieve_numbers
+
+print('Test case 1: retrieve_numbers("12abc600$##0900AB 100X")')
+print('Expected: 12 600 0900 100')
+print('Actual  :', retrieve_numbers("12abc600$##0900AB 100X"))
+print()
+print('Test case 2: retrieve_numbers("34.5689abc980"')
+print('Expected: 34 5689 980')
+print('Actual  :', retrieve_numbers("34.5689abc980"))
+print()
+print('Test case 3: retrieve_numbers("xyz")')
+print('Expected:')
+print('Actual  :', retrieve_numbers("xyz"))
+print()
+print('Test case 4: retrieve_numbers("abc25xyz")')
+print('Expected: 25')
+print('Actual  :', retrieve_numbers("abc25xyz"))
