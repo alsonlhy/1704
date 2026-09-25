@@ -1,0 +1,27 @@
+record_id,pokedex_number,name,type_1,type_2,height_m,weight_kg,hp
+0,1,Bulbasaur,Grass,Poison,0.7,6.9,45
+1,2,Ivysaur,Grass,Poison,1.1,13.1,60
+2,3,Venusaur,Grass,Poison,2.1,100.1,80
+3,3,Mega Venusaur,Grass,Poison,2.4,155.5,80
+4,4,Charmander,Fire,,0.6,8.5,39
+5,5,Charmeleon,Fire,,1.1,19.1,58
+6,6,Charizard,Fire,Flying,1.7,90.5,78
+7,6,Mega Charizard X,Fire,Dragon,1.7,110.5,78
+8,6,Mega Charizard Y,Fire,Flying,1.7,100.5,78
+9,7,Squirtle,Water,,0.5,9.1,44
+10,8,Wartortle,Water,,1.1,22.5,59
+15,12,Butterfree,Bug,Flying,1.1,32.1,60
+212,172,Pichu,Electric,,0.3,2.1,20
+215,175,Togepi,Fairy,,0.3,1.5,35
+369,311,Plusle,Electric,,0.4,4.2,60
+489,412,Burmy,Bug,,0.2,3.4,40
+496,417,Pachirisu,Electric,,0.4,3.9,60
+506,427,Buneary,Normal,,0.4,5.5,55
+565,479,Wash Rotom,Electric,Water,0.3,0.3,50
+569,480,Uxie,Psychic,,0.3,0.3,75
+659,562,Yamask,Ghost,,0.5,1.5,38
+700,602,Tynamo,Electric,,0.2,0.3,35
+766,659,Bunnelby,Normal,,0.4,5.1,38
+871,746,Wishiwashi Solo Form,Water,,0.2,0.3,45
+921,794,Buzzwole,Bug,Fighting,2.4,333.6,107
+1002,871,Pincurchin,Electric,,0.3,1.1,48

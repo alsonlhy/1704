@@ -1,0 +1,10 @@
+Laptop,Electronics,$1200.00,$1100.00,25
+Phone,Electronics,800.00,$700.00,50
+Chair,Furniture,$60.00,50.00,100
+Sofa,Furniture,$960.00,$800.00,10
+TV,Electronics,500.00,$400.00,30
+Table,Furniture,$140.00,100.00,20
+Headphones,Electronics,$150.00,$100.00,60
+Refrigerator,Appliances,1200.00,$700.00,8
+Microwave,Appliances,$200.00,$100.00,15
+Lamp,Furniture,$40.00,$15.00,40

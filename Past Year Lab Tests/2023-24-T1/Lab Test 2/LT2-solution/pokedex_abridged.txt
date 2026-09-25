@@ -1,0 +1,12 @@
+pokedex_number,name,type_2,height_m
+1,Bulbasaur,Poison,0.7
+2,Ivysaur,Poison,1.1
+3,Venusaur,Poison,2.1
+3,Mega Venusaur,Poison,2.4
+4,Charmander,,0.6
+5,Charmeleon,,1.1
+6,Charizard,Flying,1.7
+6,Mega Charizard X,Dragon,1.7
+6,Mega Charizard Y,Flying,1.7
+7,Squirtle,,0.5
+8,Wartortle,,1.1
