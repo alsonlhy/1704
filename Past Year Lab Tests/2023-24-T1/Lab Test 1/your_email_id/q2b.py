@@ -5,7 +5,7 @@ def count_non_digits(str_list):
 
     if str_list == []:
 
-        return []
+        return None
 
     new_list = []
 
