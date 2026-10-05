@@ -10,4 +10,4 @@ def print_frame(ch, num_rows, num_cols):
 
     print(ch * num_cols)
 
-print_frame('#', 2, 2)
+print_frame('#', 5, 4)
