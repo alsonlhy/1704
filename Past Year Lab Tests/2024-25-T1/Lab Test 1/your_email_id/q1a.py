@@ -2,7 +2,10 @@
 # Email ID:
 
 def get_hemisphere_volume(r):
-    # Replace the code below with your implementation.
-    return None
+
+    vol = 2/3 * 3.14 * r**3
+
+    
+    return round(vol, 2)
 
     

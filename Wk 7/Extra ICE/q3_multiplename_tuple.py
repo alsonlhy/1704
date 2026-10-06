@@ -15,3 +15,5 @@ def find_students(namelist):
 
 
 print(find_students([("James", "Wong"), ("Lily", "Khoo"), ("Peter", "Wong"), ("George", "Lim")]))
+
+# Worst case: O(n^2); n*(n-1)/2

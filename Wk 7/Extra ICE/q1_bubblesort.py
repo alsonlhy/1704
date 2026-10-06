@@ -14,3 +14,6 @@ def bubble_sort(a):
 a = [2,5,6,3,9,1,8,4]
 
 print(bubble_sort(a))
+
+# WORST CASE: O(n^2) swaps
+# For n = 8, comparisons = n*(n-1)/2; worst case swaps = n*(n-1)/2
