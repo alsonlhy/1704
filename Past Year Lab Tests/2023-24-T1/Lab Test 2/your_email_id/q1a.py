@@ -3,5 +3,15 @@
 
 
 def compute_coe_rebate(car_info):
-    # Modify the code below.
-    return 0
+
+    coe_paid = int(car_info[2][0][1:])
+    days_left = 3650 - car_info[1]
+
+    rebate = coe_paid * days_left / (3650)
+
+
+    
+    return int(rebate)
+
+
+
