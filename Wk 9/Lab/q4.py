@@ -18,7 +18,4 @@ for item_name, item_price, item_qty in summary:
     print(f"{item_name}\t{item_price}\t{item_qty}")
 
 
-
-
-
 print(f"\nTotal price: ${total}")

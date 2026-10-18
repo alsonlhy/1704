@@ -8,9 +8,9 @@ while not (gender == "M" or gender == "F"):
 
 if gender == "M":
 
-    gen = "Male"
+    gen = "male"
 
 else:
-    gen = "Female"
+    gen = "female"
 
 print(f"Thanks! Your gender is {gen}")
