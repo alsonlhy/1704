@@ -1,0 +1,6 @@
+item name,qty in stock,unit price
+Pen,50,1.20
+Ruler,25,2.50
+Pencil,80,0.80
+Eraser,40,0.60
+Notebook,30,3.90
