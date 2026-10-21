@@ -10,12 +10,12 @@ def get_matrix(filename):
 
         for line in reading:
 
-            new_line = []
 
             line = line.rstrip('\n')
-            num = line.split(" ")
+            num_row = line.split(" ")
 
-            for digit in num:
+            new_line = []
+            for digit in num_row:
                 digit = float(digit)
                 new_line.append(digit)
 
