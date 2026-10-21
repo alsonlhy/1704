@@ -16,9 +16,9 @@ def print_alternate_columns(filename):
             for i in range(0, len(columns),2):
 
                 if i > 0:
-                    output += ' & '
+                    output += '&'
 
-                output += columns[i].strip()
+                output += columns[i]
 
             print(output)
 
