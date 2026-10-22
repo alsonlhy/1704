@@ -1,0 +1,7 @@
+my_test_func(param1, param2)
+else
+another_function()
+This is a function without any parameter.""
+pas
+third_funct()
+This is a functio
