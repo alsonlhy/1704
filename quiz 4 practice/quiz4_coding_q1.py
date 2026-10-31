@@ -13,15 +13,17 @@ def read_tours(filename):
 
     with open(filename) as reading:
 
+        reading.readline()
+
         for line in reading:
 
             line = line.rstrip('\n')
             tour_name, avail_place, ppp = line.split("!")
 
-            tup = (tour_name, avail_place, ppp)
+            tup = (tour_name, int(avail_place), float(ppp))
             newlist.append(tup)
 
 
-    return tup
+    return newlist
 
 print(read_tours("tours.txt"))

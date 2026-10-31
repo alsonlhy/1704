@@ -5,16 +5,16 @@ with open("employees.txt") as reading:
         line = line.rstrip("\n")
         keyvalue = line.split("\t")
 
-        # Extract the employee id as an integer
-        emp_id = int(keyvalue[0].split(":")[1])
 
-        # Build the inner dictionary for this specific employee
+        em_id = int(keyvalue[0].split(":")[1])
+
+
         inner_dict = {}
         for item in keyvalue[1:]:
             key, val = item.split(":")
             inner_dict[key] = val
 
-        em_dict[emp_id] = inner_dict
+        em_dict[em_id] = inner_dict
 
 resume_search = "Y"
 
@@ -31,13 +31,12 @@ while resume_search != "N":
                 print(f"    The {check_field} is {em_info[check_field]}.")
             else:
                 print("    Not found!")
-            # Prompt again to avoid an infinite loop
+
             check_field = input("    Enter a field name or 'S' to stop: ")
 
     else:
         print("Not found!")
 
-    # Prompt again to avoid an infinite outer loop
     resume_search = input(
         "\nDo you want to search for another employee? [Y|N]: "
     )
