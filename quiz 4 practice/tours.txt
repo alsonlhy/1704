@@ -1,0 +1,5 @@
+TOUR!PLACES!PRICE
+River Walk!12!18.50
+Heritage Trail!8!24.00
+Garden Visit!15!16.00
+Night Tour!6!28.50

@@ -1,30 +1,45 @@
+em_dict = {}
+
 with open("employees.txt") as reading:
-
-    em_dict = {}
-
     for line in reading:
-
         line = line.rstrip("\n")
         keyvalue = line.split("\t")
 
+        # Extract the employee id as an integer
+        emp_id = int(keyvalue[0].split(":")[1])
 
-        id = int(keyvalue[0].split(":")[1])
-        em_dict[id] = keyvalue[1:]
+        # Build the inner dictionary for this specific employee
+        inner_dict = {}
+        for item in keyvalue[1:]:
+            key, val = item.split(":")
+            inner_dict[key] = val
 
-    print(em_dict)
+        em_dict[emp_id] = inner_dict
 
+resume_search = "Y"
 
-em_id = int(input("Enter an employee ID: "))
+while resume_search != "N":
+    user_id = int(input("Enter an employee ID: "))
 
-picklist = em_dict[em_id]
+    if user_id in em_dict:
+        em_info = em_dict[user_id]
+        print(f"This employee is {em_info.get('name')}.")
 
-for item in picklist:
-    inner_dict = {}
-    newkeyvalue = item.split(":")
-    inner_dict[newkeyvalue[0]] = newkeyvalue[1]
+        check_field = input("    Enter a field name or 'S' to stop: ")
+        while check_field != "S":
+            if check_field in em_info:
+                print(f"    The {check_field} is {em_info[check_field]}.")
+            else:
+                print("    Not found!")
+            # Prompt again to avoid an infinite loop
+            check_field = input("    Enter a field name or 'S' to stop: ")
 
-print(inner_dict)
+    else:
+        print("Not found!")
 
+    # Prompt again to avoid an infinite outer loop
+    resume_search = input(
+        "\nDo you want to search for another employee? [Y|N]: "
+    )
 
-
-    
+print("\nGood-bye!")
