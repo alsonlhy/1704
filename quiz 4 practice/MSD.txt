@@ -1,0 +1,109 @@
+Q1: 
+while 1 < 4:
+    values[1] = 3 * 2 = 6
+    position = 3
+
+while 3 < 4:
+    values[3] = 5 * 2 = 10
+    position = 5
+
+new_items = [4,6,6,10] + [3] = [4,6,6,10,3]
+
+[4,6,6,10]
+[4,6,6,10,3]
+
+
+Q2:
+
+selected = [5,7,9]
+
+while 0 < 3:
+    selected[0] = 5 + 0 + 1 = 6
+    selected = [6,7,9]
+    position = 1
+
+while 1 < 3:
+    selected[1] = 7 + 1 + 1 = 9
+    selected = [6,9,9]
+    position = 2
+
+while 2 < 3:
+    selected[2] = 9 + 2 + 1 = 12
+    selected = [6,9,12]
+    position = 3
+
+[3,5,7,9]
+[6,9,12]
+
+
+Q3: 
+
+original = [4,7,10,13]
+
+numbers = [7,10,13]
+
+while 0 < 3:
+    numbers[0] = 7-1 = 6
+    numbers = [6,10,13]
+    position = 2
+
+while 2 < 3:
+    numbers[2] = 13 - 1 = 12
+    numbers = [6,10,12]
+    position = 4
+
+original[1] = 12
+original = [4,12,10,13]
+
+[4,12,10,13]
+[6,10,12]
+
+
+Q4:
+
+guide = [5,8,11]
+
+while 0 < 3: 
+    data[0] = 5 + 1 = 6
+    data = [6,5,8,11]
+    position = 1
+
+while 1 < 3: 
+    data[1] = 8 + 1 = 9
+    data = [6,9,8,11]
+    position = 2
+
+while 2 < 3:
+    data[2] = 11 + 1 = 12
+    data = [6,9,12,11]
+    position = 3
+
+[6,9,12,11]
+[6,9,12,6]
+
+
+Q5:
+
+part = [2,6]
+data = [2,4,6,8]
+
+while 0 < 2:
+    part[0] = 4 + 2 = 6
+    part = [6,6]
+    position = 1
+
+while 1 < 2:
+    part[1] = 6 + 6 = 12
+    part = [6,12]
+    position = 2
+
+data[0] = 12
+data = [12,4,6,8]
+part.append(8) = [6,12,8]
+
+[12,4,6,8]
+[6,12,8]
+
+
+
+

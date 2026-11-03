@@ -1,0 +1,24 @@
+Q1: 
+A3M5D5
+
+Q2:
+P MCLNSE
+
+Q3:
+EGB
+
+Q4:
+BC 2
+
+Q5: 
+PF 5.5
+
+Q6:
+TR 7
+
+Q7:
+selected: ['Palm', 'Rose']
+
+output:
+Palm
+Rose
