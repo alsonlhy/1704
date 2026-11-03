@@ -1,19 +1,12 @@
 def find_last_letter(my_str):
 
-    if my_str == "":
-        return (-1)
 
-    count = 0
-    check_letter = False
+    for i in range(len(my_str)-1, -1, -1):
+        ch = my_str[i]
+        if ch.isalpha():
+            return i 
+    
+    return (-1)
 
-    for char in my_str:
-        if char.isalpha():
-            check_letter = True
-            count += 1
 
-        else: 
-            check_letter = False
-            count += 1
-
-    return count
     
