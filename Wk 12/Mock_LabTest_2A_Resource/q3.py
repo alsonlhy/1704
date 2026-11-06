@@ -1,26 +1,32 @@
 def process_numbers(input_filename, output_filename):
+    total_groups = 0
+    max_average = None
 
     with open(input_filename) as reading:
-        with open(output_filename, 'w') as writing: 
-
-            for line in reading: 
-                line = line.rstrip("\n")
+        with open(output_filename, 'w') as writing:
+            for line in reading:
+                line = line.strip()
                 groups = line.split("#")
 
-                count = 0
-                for group in groups: 
+                averages = ""
+                for group in groups:
+                    numbers = group.split()
 
-                    count += 1
-                    number = group.split(" ")
-                    
+                    total = 0
+                    for number in numbers:
+                        total += float(number)
 
-    print(groups)
-    print(number)
+                    average = round(total / len(numbers), 1)
 
+                    if max_average is None or average > max_average:
+                        max_average = average
 
+                    if averages != "":
+                        averages += "#"
+                    averages += str(average)
 
-                # writing.write(f"{count}: {avg}# \n")
+                total_groups += len(groups)
+                writing.write(f"{len(groups)}: {averages}\n")
 
-
-
-process_numbers("numbers.txt", "output.txt")
+            writing.write(f"Total number of groups: {total_groups}\n")
+            writing.write(f"Maximum average: {max_average}\n")

@@ -16,3 +16,4 @@ print('-' * 10)
 html_text = 'A piece of text without tags.'
 print("Expected: []")
 print('Actual:   ' + str(extract_bold_texts(html_text)))
+
