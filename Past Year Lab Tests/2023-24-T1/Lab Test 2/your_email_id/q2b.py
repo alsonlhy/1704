@@ -5,6 +5,7 @@
 def generate_loan_report(filename, bank_code):
 
     summary = []
+    total_amt = 0
 
     with open (filename) as reading:
 
@@ -17,18 +18,12 @@ def generate_loan_report(filename, bank_code):
             loan_type = value[2]
             amt = int(value[3].lstrip("$"))
 
-            if bank_code in branch:
+            if branch[:3] == bank_code:
                 summary.append((nric, branch, loan_type, amt))
+                total_amt += amt
 
-    if bank_code not in branch:
-        return []
-    
-    total_amt = 0
-    for tup in summary:
-
-        total_amt += tup[3]
-
-    summary.append(('Total Loan Amount', total_amt))
+    if len(summary) > 0:
+        summary.append(('Total Loan Amount', total_amt))
                 
     return summary
         
