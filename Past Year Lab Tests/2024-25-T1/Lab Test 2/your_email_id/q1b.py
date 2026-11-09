@@ -2,28 +2,21 @@
 # Email ID:
 
 def alternate_and_reverse(s1, s2):
+    result = ""
+    shorter = min(len(s1), len(s2))
 
-    new_str = ''
+    # alternate characters for the length of the shorter string
+    for i in range(shorter):
+        result += s1[i] + s2[i]
 
-    len1 = len(s1)
-    len2 = len(s2)
+    # pick whichever string has leftover characters
+    if len(s1) > len(s2):
+        longer = s1
+    else:
+        longer = s2
 
-    for ch in s1:
+    # append the leftover characters in reverse order
+    for i in range(len(longer) - 1, shorter - 1, -1):
+        result += longer[i]
 
-        new_str += ch
-
-        for ch2 in s2:
-
-            new_str += ch2
-
-    # if len1 > len2:
-    #     num = len1-len2 
-    #     new_str += len1[-1:num]
-
-    # elif len2 > len1:
-    #     num2 = len2 - len1
-    #     new_str += len2[-1:num2]
-
-    
-    return new_str
-
+    return result
