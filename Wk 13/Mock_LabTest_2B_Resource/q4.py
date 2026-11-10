@@ -1,6 +1,6 @@
 def get_document_pair(filename):
 
-    extracted = []
+    extracted_dict = {}
     with open (filename) as reading:
 
         for line in reading:
@@ -8,21 +8,22 @@ def get_document_pair(filename):
             columns = line.split("\t")
 
             id = columns[0]
-            words = columns[1].split(" ")
-            extracted.append([id, words])
+            words = set(columns[1].split(" "))
+
+            extracted_dict[id] = words
+
+    doc_id = list(extracted_dict.keys())
+
+        # for i in range(0, len(id)-1):
+        #     for j in range(i+1, len(id)):
 
 
-    uniq_word = []
-    for lst in extracted:
-        words = lst[1]
-
-        for word in words:
-
-            if word not in uniq_word:
-                uniq_word.append(word)
-
-    return uniq_word
 
 
-print(get_document_pair("documents.txt"))
+    print(doc_id)
+
+
+get_document_pair('documents.txt')
+
+
 

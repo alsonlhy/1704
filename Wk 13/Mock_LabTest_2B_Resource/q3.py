@@ -1,50 +1,46 @@
+def convert_time(time_stamp):
+
+    parts = time_stamp.split(":")
+    hours = int(parts[0])
+    minutes = int(parts[1])
+    seconds = int(parts[2][:2])
+
+    if "AM" in parts[2] and hours == 12:
+        hours = 0
+
+    elif "PM" in parts[2] and hours != 12:
+        hours += 12
+
+    return hours *60 * 60 + minutes * 60 + seconds
+
+
 def count_emails(file_name, start_time, end_time, sender):
 
-    # extracted = []
-    # with open (file_name) as reading:
+    start_sec = start_time[0] * 3600 + start_time[1] * 60
+    end_sec = end_time[0] * 3600 + end_time[1] * 60
 
-    #     for line in reading: 
-    #         line = line.rstrip("\n")
-    #         columns = line.split("\t")
+    count = 0
+    with open (file_name) as reading:
 
-    #         time_stamp = columns[0]
-    #         hms = time_stamp.split(":")
-    #         hh = hms[0]
-    #         mm = hms[1]
-    #         ss = hms[2]
+        for line in reading: 
+            line = line.rstrip("\n")
+            columns = line.split("\t")
 
-    #         sending = columns[1]
-    #         receiving = columns[2]
+            time_stamp = columns[0]
+            sending = columns[1]
+            receiving = columns[2]
 
-    #         extracted.append([hh, mm, ss, sending, receiving])
 
-    # count = 0
-    # for lst in extracted:
+            if sender == sending:
 
-    #     hour = int(lst[0])
-    #     minute = int(lst[1])
-    #     sec = int(lst[2][:2])
-    #     send = lst[3]
-    #     receive = lst[4]
-
-    #     if "PM" in lst[2] and (hour < 12 and hour != 12):
-    #         hour += 12
-
-    #     if sender == send and (hour >= start_time[0] and hour <= end_time[0]):
-            
-    #         if (minute >= start_time[1] or minute <= end_time[1]):
-
-    #             if sec == 0:
-    #                 count += 1
-    #                 # print(lst)
+                email_sec = convert_time(time_stamp)
+                if start_sec <= email_sec <= end_sec:
+                    count += 1
                             
 
 
-    # return count
+    return count
 
-# print(count_emails('emails-1.txt',0,0,0))
-    
-    pass
 
 
 
