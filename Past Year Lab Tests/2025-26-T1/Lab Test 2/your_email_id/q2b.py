@@ -1,5 +1,7 @@
 # Name:
 # Email ID:
+from q2a import decode_potter
+
 
 def decode_potter_checksum(filename):
     """
@@ -16,6 +18,24 @@ def decode_potter_checksum(filename):
         * str: the text extracted from the message
         * int: the calculated checksum for this message
         * bool: True if calculated checksum is equal to expected checksum
-    """    
-    # Modify the code below.
-    return None
+    """ 
+    sentences = decode_potter(filename)
+    check = []
+    vowel_check = "AaEeIiOoUu"
+
+
+    for sentence in sentences:
+
+        text = sentence[:-2]
+        checksum = int(sentence[-2:])
+        count = 0
+        for letter in text:
+            if letter in vowel_check:
+                count += 1
+
+        if count == checksum:
+            check.append((text, count, True))
+        else:
+            check.append((text,count,False))
+
+    return check
