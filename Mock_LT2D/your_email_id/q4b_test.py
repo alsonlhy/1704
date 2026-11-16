@@ -1,0 +1,21 @@
+from q4b import get_best_workshops
+
+if __name__ == '__main__':
+    print('Test cases for Q4B')
+    print('-' * 20)
+    print('Test case 1: get_best_workshops("workshops-1.txt")')
+    print('Expected:', (16, ['W1', 'W3', 'W5']))
+    print('Actual:  ', get_best_workshops('workshops-1.txt'))
+    print()
+    print('Test case 2: get_best_workshops("workshops-2.txt")')
+    print('Expected:', (15, ['D']))
+    print('Actual:  ', get_best_workshops('workshops-2.txt'))
+    print()
+    print('Test case 3: get_best_workshops("workshops-3.txt")')
+    print('Expected:', (4, ['X']))
+    print('Actual:  ', get_best_workshops('workshops-3.txt'))
+    print()
+    print('Test case 4: get_best_workshops("workshops-4.txt")')
+    print('Expected:', (0, []))
+    print('Actual:  ', get_best_workshops('workshops-4.txt'))
+    print()

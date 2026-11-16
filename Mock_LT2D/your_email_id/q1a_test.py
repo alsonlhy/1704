@@ -1,0 +1,21 @@
+from q1a import get_longest_streak
+
+if __name__ == '__main__':
+    print('Test cases for Q1A')
+    print('-' * 20)
+    print('Test case 1: get_longest_streak([8000, 12000, 10500, 3000, 11000, 10000, 10000, 2000], 10000)')
+    print('Expected:', 3)
+    print('Actual:  ', get_longest_streak([8000, 12000, 10500, 3000, 11000, 10000, 10000, 2000], 10000))
+    print()
+    print('Test case 2: get_longest_streak([8000, 12000, 10500, 3000, 11000, 10000, 10000, 2000], 15000)')
+    print('Expected:', 0)
+    print('Actual:  ', get_longest_streak([8000, 12000, 10500, 3000, 11000, 10000, 10000, 2000], 15000))
+    print()
+    print('Test case 3: get_longest_streak([10000, 10000], 10000)')
+    print('Expected:', 2)
+    print('Actual:  ', get_longest_streak([10000, 10000], 10000))
+    print()
+    print('Test case 4: get_longest_streak([], 5000)')
+    print('Expected:', None)
+    print('Actual:  ', get_longest_streak([], 5000))
+    print()
