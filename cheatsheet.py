@@ -984,6 +984,12 @@ def sort_records(records, index, descending=False):
     Multi-key: sorted(records, key=lambda r: (-r[1], r[0]))  -> field 1 desc, then field 0 asc."""
     return sorted(records, key=lambda r: r[index], reverse=descending)
 
+# stalls = [('Ah Huat', 4.6), ('Uncle Lim', 4.8), ('Mei Mei', 4.4)]
+
+# Using a lambda (sorts by index 1, descending)
+# by_rating = sorted(stalls, key=lambda item: item[1], reverse=True)
+# [('Uncle Lim', 4.8), ('Ah Huat', 4.6), ('Mei Mei', 4.4)]
+
 
 def insertion_sort_by(records, index):
     """Manual stable sort IN PLACE (if sorted() is banned). Ascending by records[i][index]."""
