@@ -1,0 +1,10 @@
+trip_id,bike_id,from_station,to_station,depart_time,duration_min
+T01,B07,MBS,SMU,08:15,12
+T02,B03,SMU,Stadium,08:20,25
+T03,B07,SMU,MBS,08:40,15
+
+T04,B11,Stadium,MBS,08:55,10
+T05,B03,Stadium,SMU,09:10,20
+T06,B11,MBS,MBS,09:00,30
+T07,B07,MBS,Stadium,09:20,45
+T08,B05,SMU,MBS,09:50,20
